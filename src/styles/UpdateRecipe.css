@@ -1,0 +1,108 @@
+/* UpdateRecipe.css */
+
+.update-recipe {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    padding: 2rem;
+    color: #c8d4df;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .update-recipe:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .update-recipe h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #34495e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+  
+  .update-recipe input[type="text"],
+  .update-recipe textarea {
+    padding: 12px 15px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .update-recipe input[type="text"]:focus,
+  .update-recipe textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+  }
+  
+  .update-recipe input[type="text"] {
+    width: 100%;
+  }
+  
+  .update-recipe textarea {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .update-recipe button {
+    background-color: #b76314;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .update-recipe button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .update-recipe button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Toast Notifications */
+  .Toastify__toast-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .Toastify__toast--success {
+    background-color: #daebe0;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #e74c3c;
+  }
+  
+  .Toastify__close-button {
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .update-recipe {
+      margin: 3rem 1rem;
+      padding: 1.5rem;
+    }
+  
+    .update-recipe h2 {
+      font-size: 1.5rem;
+    }
+  }
